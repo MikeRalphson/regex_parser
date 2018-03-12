@@ -1,0 +1,30 @@
+{
+  "name": "regex_parser",
+  "version": "1.0.0",
+  "description": "A regular expression parser written in JavaScript",
+  "main": "regex.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codebox/regex_parser.git"
+  },
+  "keywords": [
+    "regex",
+    "regexp"
+  ],
+  "author": "Rob Dawson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codebox/regex_parser/issues"
+  },
+  "homepage": "https://github.com/codebox/regex_parser#readme",
+  "devDependencies": {
+    "expect": "^22.4.0",
+    "mocha": "^5.0.4"
+  }
+}

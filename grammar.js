@@ -1,3 +1,5 @@
+'use strict';
+
 var grammar = (function () {
     var PRODUCTION_RULES_TXT = [
         "REGEX               : TERM",
@@ -174,5 +176,8 @@ var grammar = (function () {
         'startSymbolName': 'REGEX',
         'productionRules': productionRules
     };
-}());
+})();
 
+module.exports = {
+    grammar: grammar
+};

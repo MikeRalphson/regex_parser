@@ -1,3 +1,7 @@
+'use strict';
+
+var set = require('./utils.js').set;
+
 function regex(parseTreeRootNode) {
     var matcherFunctions = [];
 
@@ -74,3 +78,8 @@ function regex(parseTreeRootNode) {
         }
     };
 }
+
+module.exports = {
+    regex: regex
+};
+

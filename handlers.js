@@ -1,3 +1,8 @@
+'use strict';
+
+var set = require('./utils.js').set;
+var regex = require('./regex.js').regex;
+
 var handlers = (function () {
     var UNLIMITED = {};
 
@@ -324,3 +329,8 @@ var handlers = (function () {
         }
     };
 }());
+
+module.exports = {
+    handlers: handlers
+};
+

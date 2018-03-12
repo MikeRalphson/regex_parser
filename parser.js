@@ -1,3 +1,11 @@
+'use strict';
+
+var util = require('util');
+
+var grammar = require('./grammar.js').grammar;
+var handlers = require('./handlers.js').handlers;
+var regex = require('./regex.js').regex;
+
 var parser = (function (grammar) {
 
     function indent(n) {
@@ -101,4 +109,8 @@ var parser = (function (grammar) {
 }(grammar));
 
 handlers.apply(grammar);
+
+module.exports = {
+   parser: parser 
+};
 

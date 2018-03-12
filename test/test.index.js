@@ -1,3 +1,9 @@
+'use strict';
+
+var expect = require('expect');
+
+var parser = require('../parser.js').parser;
+
 describe("Test", function () {
     function testRegex(regexText, text, expectedResult) {
         var textArray;

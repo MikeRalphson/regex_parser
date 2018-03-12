@@ -1,3 +1,5 @@
+'use strict';
+
 function set(){
     var data = {};
     return {
@@ -16,3 +18,8 @@ function set(){
         }
     };
 }
+
+module.exports = {
+    set: set
+};
+
