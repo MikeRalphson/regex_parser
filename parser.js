@@ -101,7 +101,7 @@ var parser = (function (grammar) {
             var rootNode = grammar.productionRules.get(ssn).consume(regexText);
             //console.log(rootNode.toString())
             if (rootNode.text != regexText){
-                throw 'Unable to parse regex, consumed "' + rootNode.text + '"'
+                throw new SyntaxError('Unable to parse regex, consumed "' + rootNode.text + '" of "' + regexText + '"');
             }
             return regex(rootNode);
         }
